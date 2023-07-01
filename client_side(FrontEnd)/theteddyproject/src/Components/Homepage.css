@@ -17,23 +17,23 @@
 .Home{
     margin-left: 300px;
     margin-top: 20px;
-    font-style: italic;
+    /* font-style: italic; */
     /* color:white ; */
 }
 .Toys{
     margin-left: 50px;
     margin-top: 20px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 .offers{
     margin-left: 50px;
     margin-top: 20px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 .Signin{
     margin-left: 10px;
     margin-top: 20px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 #input{
     margin-left: 50px;
@@ -64,7 +64,7 @@
 .wish{
     margin-left: 10px;
     margin-top: 20px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 .slide{
     border:solid 1px 

@@ -27,13 +27,19 @@ app.get('/search/:searchData',async(req,res) =>{
     var data=req.params.searchData
     var getTableData = `select * from teddy where Product_Name="${data}"`;
     con.query(getTableData, function(err, result){
-        // if(err) throw err;
-        // alert("Data added successfully!")
         res.status(200).send(result);
     })
 })
-const port = 5500;
-app.listen(5500, () => {
+app.get("/sort/:sortData",async(req,res) =>{
+    var sortOrders=req.params.sortData;
+    var getTableData = `select * from teddy ORDER BY Product_Price ${(sortOrders === 'asc') ? "ASC" : "DESC"}`;
+    con.query(getTableData, function(err, result){
+        if(err) throw err;
+        res.status(200).send(result);
+    })
+})
+const port = 5050;
+app.listen(5050, () => {
     console.log(`Server running on port ${port}`);
   }); 
 app.on('listening', function() {
