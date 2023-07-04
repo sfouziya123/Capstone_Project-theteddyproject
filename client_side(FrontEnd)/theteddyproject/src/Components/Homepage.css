@@ -3,7 +3,7 @@
     height: 60px;
     width: 100%;
     display: flex;
-    background-color:#FBFFB1;
+    background-color:#C3195D;
 }
 .Logo{
     height: 60px;
@@ -17,22 +17,26 @@
 .Home{
     margin-left: 300px;
     margin-top: 20px;
+    color: white;
     /* font-style: italic; */
     /* color:white ; */
 }
 .Toys{
     margin-left: 50px;
     margin-top: 20px;
+    color: white;
     /* font-style: italic; */
 }
 .offers{
     margin-left: 50px;
     margin-top: 20px;
+    color: white;
     /* font-style: italic; */
 }
 .Signin{
     margin-left: 10px;
     margin-top: 20px;
+    color: white;
     /* font-style: italic; */
 }
 #input{
@@ -64,6 +68,7 @@
 .wish{
     margin-left: 10px;
     margin-top: 20px;
+    color: white;
     /* font-style: italic; */
 }
 .slide{

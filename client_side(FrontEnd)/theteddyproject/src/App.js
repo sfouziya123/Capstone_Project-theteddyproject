@@ -4,6 +4,7 @@ import './App.css';
 import {useState,useEffect} from 'react';
 import Teddy from './Components/Displayteddy';
 import Product from './Components/Productpage';
+import star from './Components/star';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
        {/* <Home/>  */}
       <Teddy/>
       {/* <Product/> */}
+      {/* <star/> */}
      
       
       

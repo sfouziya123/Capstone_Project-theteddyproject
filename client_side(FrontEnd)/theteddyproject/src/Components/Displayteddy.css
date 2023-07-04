@@ -2,6 +2,7 @@
     height: 200px;
     width: 200px;
     margin: 20px;
+    /* border-radius: 100px;*/
     
 }
 #main{
@@ -15,6 +16,7 @@
 .home{
     margin-left: 170px;
     margin-top: 20px;
+    color: white;
 }
 .logo{
     height: 60px;
@@ -23,11 +25,33 @@
     border-radius: 90px;
     margin-left: 120px;
 }
+.wishList{
+    height: 40px;
+    width: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 6px;
+    
+}
+.Whish{
+    margin-left: 5px;
+    margin-top: 20px;
+    color: white;
+}
+/* .Icon{
+    height: 30px;
+    width: 30px;
+    border: solid 1px red;
+    border-radius: 40px;
+    margin-left: 180px;
+    margin-bottom: 10px;
+} */
+
  
 .main {
-    /* border: 1px solid #FFACAC; */
+    border: 1px solid #FFACAC;
     border-radius: 10px;
-    height: 320px;
+    height: 400px;
     width: 290px;
     margin-left: 20px;
     text-align: center;
@@ -35,13 +59,39 @@
     
     color: #494444;
 }
-.main:hover{
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    /* border: 3px solid #FFACAC; */
-    background-color:#FFEBB4;
-    color:brown;
+.main > button{
+    margin-top: 10px;
 
 }
+.Product{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+#secondMain{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.heartIcon{
+    
+    height: 30px;
+    width: 30px;
+} 
+.button{
+    margin-right: 68px;
+    width: 120px;
+    height: 25px;
+}
+/* .main:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+   
+    background-color:rgb(229, 138, 153);
+    color:white;
+
+} */
 .search{
     border-radius: 80px;
     height: 30px;
@@ -52,25 +102,30 @@
 select{
     margin-left: 130px;
     padding: 10px 50px 10px 50px;
-    border: 4px solid #FFEBB4;
+    border: 4px solid rgb(229,138,153);
     border-radius: 5px;
-    background-color: #FBFFB1;
-    color:gray;
+    background-color: #C3195D;
+    color:white;
     margin-top: 50px;
 }
 .change{
-     margin-left: -60px;
+     text-align:left;
+     margin-left: 50px;
 }
 .chang{
-    margin-left: -117px;
+    text-align:left;
+     margin-left: 50px;
+     margin-top: 10px;
 }
 .chance{
-    margin-left: -135px;
+    text-align:left;
+     margin-left: 50px;
 }
+
 
 
 /* footer part */
-/* footer
+footer
 {
     border:1px solid #FFEBB4;
     height: 300px;
@@ -83,20 +138,32 @@ select{
 {
    margin-top: 60px; 
    margin-left: 150px; 
-   /* font-style: italic; */
-   /*color: rgb(62, 59, 59);
+    /* font-style: italic;  */
+   color: rgb(62, 59, 59);
 }
  .connect
 {
     margin-top: 40px; 
     margin-left: 300px; 
     /* font-style: italic; */
-   /* color: rgb(62, 59, 59);
+   /* color: rgb(62, 59, 59);*/
     
 }
-p{
+.contactnumber{
+    margin-top: -40px;
+    height:20px;
+     
+}
+.paragraph{
     font-size: 14px;
     margin-left: 10px;
+    text-align: left;
+}
+.paragraph1{
+    margin-top: -8px;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: left;
 }
 .google{
     margin-left: -40px;
@@ -106,19 +173,18 @@ p{
     margin-top: 40px; 
     margin-left: 300px; 
     /* font-style: italic; */
-    /*color: rgb(62, 59, 59);
+    /*color: rgb(62, 59, 59);*/
 }
 .contactNumber{
     height: 18px;
     width: 18px;
     margin-top: 15px;
    
-}////*/
-/* .mobile{
+}
+.mobile{
     display: flex;
-} //////////////////////*/
-
-/*.facebookImage
+} 
+.facebookImage
 {
     border-radius: 100px;
     height: 30px;
@@ -131,4 +197,4 @@ p{
 .equal
 {
     display: flex;
-}   */
+}  

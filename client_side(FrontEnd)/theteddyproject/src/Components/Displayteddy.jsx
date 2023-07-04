@@ -41,6 +41,7 @@ const Teddy = () => {
     function clearData(){
         setInputValue("");
     }
+    
 
     return (<div>
             <div className="Navbar">
@@ -55,8 +56,8 @@ const Teddy = () => {
                         <div className="offers">Offers</div>
                         <img className="Login" src = "Resources/signin1.png" alt=""/>
                         <div className="Signin">Signin</div> 
-                        <img className="wishlist" src = "Resources/wishlist.jpg" alt=""/>
-                        <div className="wish">Whishlist</div>
+                        <img className="wishList" src = "Resources/whish.png" alt=""/>
+                        <div className="Whish">Whishlist</div>
                         <img className="wishlist" src = "Resources/cart2.png" alt=""/>
                         <div className="wish">Add to cart</div>
                         <input id="input" type="text" placeholder="Search" value={inputValue} onChange={handleInputChange}/> 
@@ -74,6 +75,8 @@ const Teddy = () => {
 
                 </select>
             </div>
+            
+        
         <div id="main">
             {
                 
@@ -81,39 +84,46 @@ const Teddy = () => {
                     if(e.Product_Name.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())){
                         return data;
                     }
-                })?.map(({Product_Image,Product_Name,Product_Price,Product_Rating})=><div>
+                })?.map(({Product_Image,Product_Name,Product_description,Product_Price, Product_Rating})=><div>
                         <div className="main">
                             <div><img className="color"src={Product_Image} alt=""/></div> 
-                            <div className="change">{Product_Name}</div>
-                            <div className="chang"><b>Price:</b> {Product_Price}</div>
-                            <div className="chance"><b>Rating:</b>{Product_Rating}</div>
-                            {/* <div><b>Description: </b>{Product_description}</div> */}
+                            <div className="change"><b>{Product_Name}</b></div>
+                            <div className="Product">{Product_description}</div>
+                            <div className="chang">&#x20B9; {Product_Price}</div>
+                            <div id="secondMain">
+                            <button className="button">Add To Cart</button>
+                            <img className="heartIcon" src="Resources/Heart.png" alt=""/>
+                            </div>
+                            {/* <div className="chance">{Product_Rating}</div> */}
+                            
                             {/* <div><b>Product_Id: </b>{Product_Id}</div> */}
                         </div>
                 </div>))
             }
+            </div>
+            <footer>
+            <div className="About">
 
-        </div>
-        {/* <footer>
-             <div className="About">
-
-                <b>About Us</b>
-                <p className ="google">Our aim to deliver high-quality<br/> welding products and services to<br/> meet the needs of our customers. <br/>Our experienced team of welders<br/> is dedicated to ensuring customer<br/> satisfaction and delivering<br></br> exceptional results.</p>
+            <b>About Us</b>
+                {/* <p className ="google">Our aim to deliver high-quality<br/> welding products and services to<br/> meet the needs of our customers. <br/>Our experienced team of welders<br/> is dedicated to ensuring customer<br/> satisfaction and delivering<br></br> exceptional results.</p> */}
                
             </div> 
             <div className="contact">
                
                 <b>Contact Information</b>
                 <div className="mobile">
-                    <img className="contactNumber" src="Resources/call1.png" alt=""/>    
-                <p>Mobile no:+91-9676948462</p><br/>
+                <img className="contactNumber" src="Resources/call1.png" alt=""/>    
+                <p className="paragraph">Mobile no:+91-9676948462</p><br/>
+              
+                </div>
                 <div className="mobile">
-                <img className="contactNumber" src="Resources/email2.png" alt=""/>  
-                <p>E-mail: TheTeddyProject@gmail.com</p>
+                <img className="contactnumber" src="Resources/email-icon.png" alt=""/>  
+                <p className="paragraph1">E-mail: theTeddyProject@gmail.com</p>
                 </div>
             </div>
 
             <div className="connect">
+
                 <b>Follow us on</b>
                
                 <div className ="equal">
@@ -127,7 +137,9 @@ const Teddy = () => {
                 </div>  
             </div>
             
-        </footer> */}
+        </footer>
+        
+
     </div>)
 }
 export default Teddy;
