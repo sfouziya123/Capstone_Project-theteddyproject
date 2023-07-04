@@ -6,6 +6,7 @@ const Teddy = () => {
     // const [sortInputValue,setInputValue] = useState('');
     useEffect(()=>{
         fetchData();
+        
 
     },[])
     const fetchData = () => {
